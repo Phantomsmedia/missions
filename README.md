@@ -1,3 +1,11 @@
-# missions
+# Jani's PhanTactical Missions
 
-Testing a mission repo!
+This is where all PhanTactical missions by myself are stored. If you are going to use them, please ask, anyway, they require tons of addons... 
+
+# Phramework Version
+
+"Phantom Pain, This Time With Cookies"
+
+# Mission Description
+
+Nothing 
