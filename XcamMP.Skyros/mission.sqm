@@ -6,13 +6,19 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"xcam_source",
-		"skyros_a3"
+		"skyros_a3",
+		"A3_Characters_F_Mark",
+		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"xcam_source",
+		"A3_Characters_F_Mark",
+		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01",
 		"skyros_a3"
 	};
 	randomSeed=15702007;
@@ -36,7 +42,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=2;
+		items=6;
 		class Item0
 		{
 			side="WEST";
@@ -49,7 +55,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -80,6 +86,92 @@ class Mission
 					skill=0.60000002;
 				};
 			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4794.8921,186.29961,14646.602};
+					id=3;
+					side="WEST";
+					vehicle="B_HeavyGunner_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4799.0054,186.58965,14646.374};
+					id=4;
+					side="WEST";
+					vehicle="B_Sharpshooter_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4803.0049,186.73038,14645.803};
+					id=5;
+					side="WEST";
+					vehicle="B_RangeMaster_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4807.1182,186.81293,14648.202};
+					id=6;
+					side="WEST";
+					vehicle="B_Soldier_GL_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4798.0625,186.76924,14657.938};
+			azimut=-114.4435;
+			id=7;
+			side="EMPTY";
+			vehicle="B_G_Offroad_01_F";
+			leader=1;
+			skill=0.60000002;
 		};
 	};
 };
