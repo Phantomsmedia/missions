@@ -6,8 +6,8 @@
 // The blocks of code below identifies equipment for this faction
 //
 // Defined loadouts:
-//		co			- commander
-//		dc 			- squad leader / deputy commander
+//		co			- platoon leader
+//		dc 			- squad leader / platoon sergeant
 //		m 			- medic
 //		ftl			- fire team leader
 //		ar 			- automatic rifleman
@@ -37,6 +37,7 @@
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
+//		fo			- forward observer / JTAC
 //		div    		- divers
 //
 //		r 			- rifleman
@@ -134,6 +135,11 @@ _smokegrenadegreen = "SmokeShellGreen";
 // Misc. Medical Items
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
+
+// Optics
+_bino = "Binocular";
+_range = "Rangefinder";
+_laser = "Laserdesignator_03";
 
 // Night Vision Goggles (NVGoggles)
 _nvg = "NVGoggles_INDEP";
@@ -340,27 +346,25 @@ switch (_typeofUnit) do
 
 // ====================================================================================
 
-// LOADOUT: COMMANDER
+// LOADOUT: PLATOON LEADER
 	case "co":
 	{
-		_unit addmagazines [_glriflemag,7];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
-		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_COrifle
+		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_riflemag_tr,2];
+		_unit addweapon _rifle;						//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
-		["g"] call _backpack;
+		["r"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
 
-// LOADOUT: SQUAD LEADER & DEPUTY COMMANDER
+// LOADOUT: SQUAD LEADER & PLATOON SERGEANT
 	case "dc":
 	{
 		_unit addmagazines [_glriflemag,7];
@@ -373,7 +377,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
 		["g"] call _backpack;
@@ -403,7 +407,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
@@ -432,7 +436,7 @@ switch (_typeofUnit) do
 		_unit addweapon _rifle;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		["aar"] call _backpack;
 		_attachments = [_attach1,_scope1];
 	};
@@ -472,7 +476,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag,7];
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["mmgag"] call _backpack;
@@ -496,7 +500,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hmgag"] call _backpack;
@@ -522,7 +526,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
@@ -547,7 +551,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hatag"] call _backpack;
@@ -574,7 +578,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		["mtrag"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -598,7 +602,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["msamag"] call _backpack;
@@ -623,7 +627,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hsamag"] call _backpack;
@@ -652,7 +656,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit linkItem "ItemGPS";
 		_attachments = [_attach1,_scope2];
 	};
@@ -665,7 +669,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_attachments = [];
 	};
 
@@ -773,6 +777,21 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _uavterminal;
 		["uav"] call _backpack;
+		_attachments = [_attach1];
+	};
+
+// LOADOUT: FORWARD OBSERVER
+	case "fo":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addWeapon _laser;
+		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
+		["car"] call _backpack;
 		_attachments = [_attach1];
 	};
 

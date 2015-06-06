@@ -1,3 +1,4 @@
+
 // ============================================================================================
 
 // TAW Tonic - View Distance Script
@@ -7,9 +8,7 @@
 
 // ============================================================================================
 
-// PhanTactical - RotorLib Simulation Forcing
-// Credits: Jani
-//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
+//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off)
 // MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. <- That legacy code.
 
 forceRotorLibSimulation = 0;
@@ -38,6 +37,45 @@ loadScreen = "loadLogo.jpg";
 
 // ============================================================================================
 
+// BWMF Gear
+//Credits:headswe, Pabst, Zerith
+
+#include "CfgLoadouts.hpp"
+
+// ============================================================================================
+
+//Extended Event Handlers:
+
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+        class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
+        class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
+    };
+    class Car {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Tank {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Helicopter {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Plane {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Ship_F {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
+    };
+};
+
+// ============================================================================================
+
 // F3 - Debug Console
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -48,7 +86,8 @@ enableDebugConsole = 1;
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-respawn = 1;
+// Group respawn test
+respawn = 4;
 respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator","f_JIP"};
@@ -93,7 +132,7 @@ class cfgNotifications
 		duration = 10;
 		priority = 0;
 	};
-	
+
 	class SafeStartMissionStarting
 	{
 		title = "SAFE START";
@@ -158,20 +197,6 @@ class Params
 
 // ============================================================================================
 
-// F3 - Folk Assign Gear Script
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_backpacks
-    {
-            title = "$STR_f_param_loadouts";
-            values[] = {0,1,2};
-            texts[] = {"Light","Medium","Heavy"};
-            default = 1;
-            code = "f_param_backpacks = %1";
-    };
-
-// ============================================================================================
-
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -184,34 +209,6 @@ class Params
             code = "f_var_radios = %1";
     };
 
-// ============================================================================================
-
-// F3 - All Gear Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_medical
-    {
-            title = "Which Mod System?";
-            values[] = {0,1,2,3};
-            texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod","Advanced Banana Environment 3"};
-            default = 3;
-            code = "f_var_medical = %1";
-    };
-
-// ============================================================================================
-/*
-// F3 - Mission Timer/Safe Start
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_mission_timer
-    {
-            title = "$STR_f_param_mission_timer";
-            values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
-            texts[] = {"$STR_f_param_mission_timer_off","1","2","3","4","5","6","7","8","9","10","15"};
-            default = 0;
-            code = "f_param_mission_timer = %1";
-    };
-*/
 // ============================================================================================
 /*
 // F3 - Mission Conditions Selector
@@ -250,75 +247,6 @@ class Params
  		code = "f_param_timeOfDay = %1";
 	};
 */
-// ============================================================================================
-
-// F3 - AI Skill Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-/*
-	class f_param_AISkill_BLUFOR
-	{
-		title = "$STR_f_param_AISkill_BLUFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_BLUFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_OPFOR
-	{
-		title = "$STR_f_param_AISkill_OPFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_OPFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_INDP
-	{
-		title = "$STR_f_param_AISkill_INDP";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_INDP = %1";
-	};
-*/
-
-// ============================================================================================
-
-// F3 - Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-	/*
-	class f_param_caching
-	{
-		title = "Legacy Cache AI outside distance (m). Keep it off!";
-		values[] = {0,600,800,1000,1500,2000};
-		default = 0;
-		code = "f_param_caching = %1";
-	};
-	*/
-		class f_param_dacdebug
-	{
-		title = "Legacy DAC Debug. Keep it off!";
-		values[] = {0,1};
-		texts[] = {"Off","On"};
-		default = 0;
-		code = "f_param_dacdebug = %1";
-	};
-
-	class ws_param_hc
-	{
-		title = "Legacy Headless Client. Keep it off!";
-		values[] = {0,1};
-		texts[] = {"Off","Auto-Detect"};
-		default = 0;
-		code = "ws_param_hc = %1";
-	};
 
 // ============================================================================================
 
@@ -336,9 +264,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -346,9 +274,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -356,9 +284,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -366,9 +294,9 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -376,9 +304,9 @@ class CfgDebriefing
 
 	class End5
 	{
-		title = "Ending #5";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -386,9 +314,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "Ending #6";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -426,156 +354,31 @@ class CfgRespawnTemplates
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
 
 // Menu components for the JIP Menu
-#include "f\JIP\f_JIP_kitpicker.h"
-#include "f\JIP\f_JIP_grppicker.h"
+//#include "f\JIP\f_JIP_kitpicker.h"
+//#include "f\JIP\f_JIP_grppicker.h"
 
 // Menu components for the Spectator Script
-#include "f\spect\config.hpp"
+//#include "f\spect\config.hpp"
 
 // ============================================================================================
 
 // F3 - Functions
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+// Cleaned up. All the functions are located in f\config.hpp. Don't go looking.
 
 class CfgFunctions
 {
 	#include "ws_fnc\config.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
-	class F // Defines the "owner"
-	{
-		class common // category
-		{
-			file = "f\common";
-			// Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
-			class processParamsArray
-			{
-				preInit = 1;
-				postInit = 1;
-			};
 
-			class nearPlayer{};
-		};
-		class mpEnd
-		{
-			file = "f\mpEnd";
-			class mpEnd{};
-			class mpEndReceiver{};
-		};
-		class assignGear
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\assignGear";
-			class assignGear{};
-		};
-		class setGroupID
-		{
-			file = "f\setGroupID";
-			class setGroupID{};
-		};
-		class missionConditions
-		{
-			file = "f\missionConditions";
-			class SetTime{};
-			class SetFog{};
-			class SetWeather{};
-		};
-		/*
-		class cache
-		{
-			file = "f\cache";
-			class cInit {};
-			class cTracker {};
-			class gCache {};
-			class gUncache {};
-		};
-		*/
-		class groupMarkers {
-			file = "f\groupMarkers";
-			class localGroupMarker{};
-			class localSpecialistMarker{};
-		};
-		/*
-		class authorisedCrew
-		{
-			file = "f\authorisedCrew";
-			class authorisedCrewCheck {};
-		};
-		*/
-		class FTMemberMarkers
-		{
-			file = "f\FTMemberMarkers";
-			class SetLocalFTMemberMarkers{};
-			class GetMarkerColor{};
-			class LocalFTMarkerSync{};
-		};
-		/*
-		class bodyRemoval
-		{
-			file = "f\removeBody";
-			class removeBody{};
-		};
-		*/
-		/*
-		class setAISkill
-		{
-			file = "f\setAISKill";
-			class setAISKill{};
-		};
-		*/
-		class mapClickTeleport
-		{
-			file = "f\mapClickTeleport";
-			class mapClickTeleportUnit{};
-			class mapClickTeleportGroup{};
-		};
-		/*
-		class nametag
-		{
-			file = "f\nametag";
-			class drawNameTag{};
-		};
-		*/
-		/*
-		class preMount
-		{
-			file = "f\preMount";
-			class mountGroups{};
-		};
-		*/
-		class zeus
-		{
-			file = "f\zeus";
-			class zeusInit{};
-			class zeusAddAddons{};
-			class zeusAddObjects{};
-		};
-		class acre
-		{
-			file = "f\radios\acre";
-			class acre_removeRadios{};
-			class acre_addRadios{};
-			class acre_setRadioFrequencies{};
-			class acre_configureSpectatorChat{};
-		};
-		class tfr
-		{
-			file = "f\radios\tfr";
-			class tfr_removeRadios{};
-			class tfr_addRadios{};
-			class tfr_setRadioFrequencies{};
-			class tfr_configureSpectatorChat{};
-		};
-		/*
-		class safeStart
-		{
-			file = "f\safeStart";
-			class safety{};
-		};
-		*/
-		#include "f\simplewoundingsystem\config.hpp"
-		#include "f\spect\functions.hpp"
-
+	class F_DAC {
+	    class F_DAC {
+	        file = "DAC";
+	        class setupDacParams {};
+	    };
 	};
+
+	#include "f\config.hpp"
 };
 
 
