@@ -15,7 +15,7 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 // Set a list of units that get a short wave
 // if its nil, that means all units get a radio
 // empty array means that noone gets
-//f_radios_settings_acre2_shortRange = ["ftl","ar","aar","rat","dm","gren","r","car","smg"];
+//f_radios_settings_acre2_shortRange = ["dc","ftl","ar","aar","rat","dm","gren","r","car","smg"];
 f_radios_settings_acre2_shortRange = [];
 
 // Set the list of units that get a long range
@@ -47,6 +47,7 @@ f_radios_settings_acre2_language_blufor = ["english"];
 f_radios_settings_acre2_language_opfor = ["russian"];
 f_radios_settings_acre2_language_indfor = ["arabic"];
 
+// ====================================================================================
 // Channel names and group defaults
 // first item in the array will correspond to the first channel
 // item definition: ["CHANNEL NAME", ["GROUP1 NAME", "GROUP2 NAME"]]
@@ -97,12 +98,7 @@ f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_bluf
 f_radios_settings_acre2_sr_groups_indfor = f_radios_settings_acre2_sr_groups_blufor;
 
 f_radios_settings_acre2_lr_groups_blufor = [
-	["Alpha Net", []],
-	["Bravo Net", []],
-	["Charlie Net", []],
-	["Command Net",
-		[
-			"CO", "DC", "PLT",
+	["Command Net", ["CO", "DC", "PLT",
 		    "ASL", "BSL", "CSL", "DSL", "ESL", "FSL",
 		    "TH1", "TH2", "TH3", "TH4", "TH5", "TH6", "TH7", "TH8",
 		    "AH1", "FW1",
@@ -114,14 +110,15 @@ f_radios_settings_acre2_lr_groups_blufor = [
 		    "MTR1",
 		    "MSAM1", "HSAM1",
 		    "ST1", "DT1",
-		    "ENG1"
-		]
-	],
-	["Delta Net", []],
-	["Echo Net", []],
-	["Foxtrot Net", []],
-	["Blank Net", []],
-	["Blank Net", []],
+		    "ENG1"]],
+	["Empty Net", []],
+	["Empty Net", []],
+	["Empty Net",[]],
+	["Empty Net", []],
+	["Empty Net", []],
+	["Empty Net", []],
+	["Empty Net", []],
+	["Empty Net", []],
 	["Air 1", []],
 	["Air 2", []],
 	["Air 3", []],
