@@ -1,10 +1,6 @@
-# Jani's PhanTactical Missions
+# Wavelength Version
 
-This is where all PhanTactical missions by myself are stored. If you are going to use them, please ask, anyway, they require tons of addons... 
-
-# Phramework Version
-
-"Phantom Pain, This Time With Cookies"
+"Standing Wave 5"
 
 # Mission Description
 
