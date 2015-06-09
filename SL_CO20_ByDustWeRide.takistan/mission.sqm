@@ -512,30 +512,30 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4664.2739,103.71749,10687.561};
-			id=29;
-			side="EMPTY";
-			vehicle="EWK_m1151_m240_deployment";
-			skill=0.60000002;
-			text="VehNato_TR1_1";
-		};
-		class Item4
-		{
 			position[]={4664.8652,103.82306,10670.086};
-			id=30;
+			id=29;
 			side="EMPTY";
 			vehicle="EWK_M1114_Armored";
 			skill=0.60000002;
 			text="VehNato_TR1_1_1";
 		};
+		class Item4
+		{
+			position[]={4665.2935,103.72,10684.553};
+			id=30;
+			side="EMPTY";
+			vehicle="EWK_M1114_Armored";
+			skill=0.60000002;
+			text="VehNato_TR1_1_1_2";
+		};
 		class Item5
 		{
-			position[]={4664.9121,103.93225,10654.836};
+			position[]={4665.3892,103.96292,10654.523};
 			id=31;
 			side="EMPTY";
-			vehicle="EWK_m1151_m2_deployment";
+			vehicle="EWK_M1114_Armored";
 			skill=0.60000002;
-			text="VehNato_TR1_1_1_1";
+			text="VehNato_TR1_1_1_3";
 		};
 	};
 	class Markers
