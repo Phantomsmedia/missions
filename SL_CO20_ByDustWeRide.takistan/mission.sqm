@@ -38,7 +38,9 @@ class Mission
 		"EWK_M1151",
 		"lop_faction_am",
 		"rhsusf_c_hmmwv",
-		"lop_faction_aa"
+		"lop_faction_aa",
+		"aia_misc3_config",
+		"A3_Structures_F_Mil_Fortification"
 	};
 	addOnsAuto[]=
 	{
@@ -52,6 +54,8 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"rhsusf_c_hmmwv",
 		"lop_faction_aa",
+		"aia_misc3_config",
+		"A3_Structures_F_Mil_Fortification",
 		"aia_takistan_config"
 	};
 	randomSeed=11823142;
@@ -76,7 +80,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=28;
+		items=27;
 		class Item0
 		{
 			side="WEST";
@@ -613,8 +617,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4618.292,132.41669,9479.124};
-					azimut=749.63782;
+					position[]={4620.7402,132.59441,9483.7666};
+					azimut=925.32452;
 					id=31;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_SL";
@@ -897,12 +901,11 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4420.8999,136.33688,9408.2832};
-					azimut=-120.789;
+					position[]={4414.0957,136.26848,9402.3467};
+					azimut=220;
 					id=40;
 					side="GUER";
-					vehicle="LOP_AM_Infantry_AR";
-					player="PLAYER COMMANDER";
+					vehicle="LOP_AM_Soldier";
 					leader=1;
 					skill=0.40000001;
 				};
@@ -916,14 +919,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4415.1187,136.1834,9403.5059};
-					azimut=220;
+					position[]={4411.6553,135.93665,9405.9023};
+					azimut=371.61499;
 					id=41;
 					side="GUER";
-					vehicle="LOP_AM_Soldier";
+					vehicle="LOP_AM_Infantry_Marksman";
 					leader=1;
 					skill=0.40000001;
-					init="[this,""STAND"",""FULL""] call BIS_fnc_ambientAnimCombat;";
 				};
 			};
 		};
@@ -935,14 +937,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4412.6782,135.7381,9407.0615};
-					azimut=371.61499;
+					position[]={4412.7705,136.28456,9402.1533};
+					azimut=535.38501;
 					id=42;
 					side="GUER";
-					vehicle="LOP_AM_Infantry_Marksman";
+					vehicle="LOP_AM_Infantry_GL";
 					leader=1;
 					skill=0.40000001;
-					init="[this,""WATCH2"",""FULL""] call BIS_fnc_ambientAnimCombat;";
 				};
 			};
 		};
@@ -954,28 +955,9 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4413.7935,136.19948,9403.3125};
-					azimut=535.38538;
-					id=43;
-					side="GUER";
-					vehicle="LOP_AM_Infantry_GL";
-					leader=1;
-					skill=0.40000001;
-					init="[this,""KNEEL"",""FULL""] call BIS_fnc_ambientAnimCombat;";
-				};
-			};
-		};
-		class Item27
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={4334.667,137.77,9306.7412};
 					azimut=-202.74255;
-					id=44;
+					id=43;
 					side="GUER";
 					vehicle="LOP_AM_Soldier";
 					leader=1;
@@ -1069,12 +1051,12 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=14;
+		items=22;
 		class Item0
 		{
 			position[]={5675.4233,83.011414,11133.403};
 			azimut=223.24754;
-			id=45;
+			id=44;
 			side="EMPTY";
 			vehicle="rhsusf_rg33_m2_usmc_d";
 			skill=0.60000002;
@@ -1084,7 +1066,7 @@ class Mission
 		{
 			position[]={5654.4863,83.059258,11149.539};
 			azimut=223.24754;
-			id=46;
+			id=45;
 			side="EMPTY";
 			vehicle="EWK_M998A2_sov_M2";
 			skill=0.60000002;
@@ -1094,7 +1076,7 @@ class Mission
 		{
 			position[]={5648.9531,83.059998,11151.433};
 			azimut=223.24754;
-			id=47;
+			id=46;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
@@ -1104,7 +1086,7 @@ class Mission
 		{
 			position[]={5676.2285,83.058037,11173.958};
 			azimut=223.24754;
-			id=48;
+			id=47;
 			side="EMPTY";
 			vehicle="EWK_M1114_Armored";
 			skill=0.60000002;
@@ -1114,7 +1096,7 @@ class Mission
 		{
 			position[]={5666.0054,83.05439,11163.711};
 			azimut=223.24754;
-			id=49;
+			id=48;
 			side="EMPTY";
 			vehicle="EWK_M1114_Armored";
 			skill=0.60000002;
@@ -1124,7 +1106,7 @@ class Mission
 		{
 			position[]={5686.5088,83.05159,11185.654};
 			azimut=223.24754;
-			id=50;
+			id=49;
 			side="EMPTY";
 			vehicle="EWK_M1114_Armored";
 			skill=0.60000002;
@@ -1134,7 +1116,7 @@ class Mission
 		{
 			position[]={4617.6514,132.51331,9477.1113};
 			azimut=631.94281;
-			id=51;
+			id=50;
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d";
 			leader=1;
@@ -1144,9 +1126,9 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={4606.8457,132.71144,9474.0703};
+			position[]={4601.604,132.74199,9472.1846};
 			azimut=588.99255;
-			id=52;
+			id=51;
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d";
 			leader=1;
@@ -1158,7 +1140,7 @@ class Mission
 		{
 			position[]={4625.6821,132.60876,9472.9629};
 			azimut=545.07587;
-			id=53;
+			id=52;
 			side="EMPTY";
 			vehicle="rhsusf_m1025_d_mk19";
 			leader=1;
@@ -1171,7 +1153,7 @@ class Mission
 		{
 			position[]={4364.5718,137.1044,9333.0625};
 			azimut=13.440546;
-			id=54;
+			id=53;
 			side="EMPTY";
 			vehicle="LOP_AM_Offroad_M2";
 			skill=0.40000001;
@@ -1180,7 +1162,7 @@ class Mission
 		{
 			position[]={4361.1904,137.52823,9324.8525};
 			azimut=47.420116;
-			id=55;
+			id=54;
 			side="EMPTY";
 			vehicle="LOP_AM_Offroad_M2";
 			skill=0.40000001;
@@ -1189,7 +1171,7 @@ class Mission
 		{
 			position[]={4329.626,137.76413,9304.4141};
 			azimut=100.226;
-			id=56;
+			id=55;
 			side="EMPTY";
 			vehicle="LOP_AM_T72BA";
 			skill=0.40000001;
@@ -1201,7 +1183,7 @@ class Mission
 		{
 			position[]={4322.8677,137.78717,9295.3721};
 			azimut=132.73985;
-			id=57;
+			id=56;
 			side="EMPTY";
 			vehicle="LOP_AM_T72BA";
 			skill=0.40000001;
@@ -1211,15 +1193,95 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={4413.7954,136.36246,9401.0488};
+			position[]={4412.7725,136.42929,9399.8896};
 			azimut=106.79478;
-			id=58;
+			id=57;
 			side="EMPTY";
 			vehicle="LOP_AM_BTR60";
 			skill=0.40000001;
 			health=0.4072322;
 			fuel=0.24047025;
 			ammo=0.25238219;
+		};
+		class Item14
+		{
+			position[]={4599.7197,132.67416,9470.209};
+			azimut=220;
+			id=58;
+			side="EMPTY";
+			vehicle="Land_CncBlock_D";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item15
+		{
+			position[]={4603.082,132.47095,9467.2998};
+			azimut=248.74377;
+			id=59;
+			side="EMPTY";
+			vehicle="Land_CncBlock_D";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item16
+		{
+			position[]={4604.9087,132.41635,9463.3887};
+			azimut=242.64743;
+			id=60;
+			side="EMPTY";
+			vehicle="Land_CncBlock";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item17
+		{
+			position[]={4632.3267,132.56934,9473.6953};
+			azimut=248.744;
+			id=61;
+			side="EMPTY";
+			vehicle="Land_Fire_barrel_burning";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item18
+		{
+			position[]={4641.0142,132.5831,9478.2891};
+			azimut=248.744;
+			id=62;
+			side="EMPTY";
+			vehicle="Land_Fire_barrel_burning";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item19
+		{
+			position[]={4598.332,133.3683,9477.333};
+			azimut=290.75171;
+			id=63;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item20
+		{
+			position[]={4604.1563,133.78748,9484.043};
+			azimut=329.461;
+			id=64;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			leader=1;
+			skill=0.40000001;
+		};
+		class Item21
+		{
+			position[]={4612.8086,133.67661,9488.0957};
+			azimut=345.47595;
+			id=65;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			leader=1;
+			skill=0.40000001;
 		};
 	};
 	class Markers
