@@ -40,6 +40,7 @@ class F // Defines the "owner"
 	    class assignGearMan {};
 	    class assignGearVehicle {};
     };
+	/*
 	class missionConditions
 	{
 		file = "f\missionConditions";
@@ -47,6 +48,7 @@ class F // Defines the "owner"
 		class SetFog{};
 		class SetWeather{};
 	};
+	*/
 	/*
 	class cache
 	{
