@@ -224,28 +224,40 @@ class opf_f {
 	
     class O_support_AMort_F: O_Soldier_F {// Assistant Mortar
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC148"};
         linkedItems[] += {"ACE_Vector"};
     };
 	
     class O_spotter_F {// Spotter
-        headgear[] = {"H_HelmetSpecO_ocamo"}; /// randomized
-        uniform[] = {"U_O_GhillieSuit"};  /// randomized
-        vest[] = {"V_Chestrig_khk"}; /// randomized
+        headgear[] = {"rhs_Booniehat_flora","rhs_fieldcap"}; /// randomized
+        uniform[] = {"rhs_uniform_flora_patchless_alt"};  /// randomized
+        vest[] = {"rhs_6b23_sniper"}; /// randomized
         weapons[] = {EAST_SPOTTER}; /// randomized
         magazines[] = {EAST_SPOTTER_MAG,EAST_SMOKE_WHITE};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
         attachments[] = {"optic_Hamr"};
     };
 	
     class O_sniper_F {// Sniper
+        headgear[] = {"rhs_Booniehat_flora","rhs_fieldcap"}; /// randomized
+        uniform[] = {"rhs_uniform_flora_patchless_alt"};  /// randomized
+        vest[] = {"rhs_6b23_sniper"}; /// randomized
         weapons[] = {EAST_SNIPER}; /// randomized
         magazines[] = {EAST_SNIPER_MAG,EAST_SMOKE_WHITE};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
+        attachments[] = {"rhs_acc_pso1m2"};
     };
+	
 // ====================================================================================
+// Vehicle Infantry	
+	
     class O_Helipilot_F {// Pilot
+        uniform[] = {"rhs_uniform_df15"};  /// randomized
         vest[] = {"V_TacVest_blk"}; /// randomized
+        headgear[] = {"rhs_zsh7a"}; /// randomized
+        backpack[] = {"rhs_sidor"};
         weapons[] = {EAST_SMG}; /// randomized
         magazines[] = {EAST_SMG_MAG,EAST_SMOKE_WHITE};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
@@ -253,6 +265,7 @@ class opf_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
         attachments[] = {};
     };
+	
     class O_helicrew_F: O_Helipilot_F { // Pilot
 
     };
@@ -261,7 +274,12 @@ class opf_f {
         uniform[] = {"U_O_PilotCoveralls"};  /// randomized
         headgear[] = {"H_PilotHelmetFighter_O"}; /// randomized
     };
+		
     class O_crew_F {// Crew
+        headgear[] = {"rhs_tsh4_ess"}; /// randomized
+        uniform[] = {"rhs_uniform_flora_patchless_alt"};  /// randomized
+        vest[] = {"rhs_6b23_engineer"}; /// randomized
+        backpack[] = {"rhs_sidor"};
         weapons[] = {EAST_CARBINE}; /// randomized
         magazines[] = {EAST_CARBINE_MAG,EAST_SMOKE_WHITE};
         items[] = {};
@@ -271,21 +289,29 @@ class opf_f {
     };
 	
     class O_soldier_repair_F: O_crew_F {// Repair Specialist
+        backpack[] = {"rhs_assault_umbts_engineer"};
         backpackItems[] = {"Toolkit", "ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
         items[] = {"ACRE_PRC343"};
+        vest[] = {"rhs_6b23_engineer"}; /// randomized
+		headgear[] = {"rhs_tsh4_ess"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
         attachments[] = {};
     };
 	
     class O_soldier_exp_F: O_soldier_repair_F {// Mines Specialist
+        backpack[] = {"rhs_sidor"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {EAST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
+        attachments[] = {"rhs_acc_dtk"};
     };
 	
     class O_engineer_F: O_soldier_repair_F {// Explosive Specialist
+        backpack[] = {"rhs_sidor"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
+        attachments[] = {"rhs_acc_dtk"};
     };
+	
 // ====================================================================================
 // Special Infantry
 
@@ -310,4 +336,5 @@ class opf_f {
         linkedItems[] += {"G_O_Diving"};
 
     };
+	
 };
