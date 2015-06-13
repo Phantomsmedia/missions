@@ -1,6 +1,6 @@
 # Wavelength Version
 
-"Standing Wave 5"
+"Fixer Wave"
 
 # Mission Description
 
