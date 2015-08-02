@@ -1,68 +1,68 @@
 //Author:
-//Description: INFOR (AAF) Standard
+//Description: Insurgents
 
 class ind_f {
 
 	//Rifle
-    #define IND_RIFLE "arifle_Mk20_F"
-    #define IND_RIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
+    #define IND_RIFLE "rhs_weap_akm"
+    #define IND_RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
 
 	//GL Rifle
-    #define IND_GLRIFLE "arifle_Mk20_GL_MRCO_pointer_F"
-    #define IND_GLRIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
-    #define IND_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
-    #define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:14"
+    #define IND_GLRIFLE "rhs_weap_akm_gp25"
+    #define IND_GLRIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
+    #define IND_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:4","rhs_GRD40_Green:2","rhs_GRD40_Red:3"
+    #define IND_GLRIFLE_MAG_HE "rhs_VOG25P:14"
 
 	//Carbine
-    #define IND_CARBINE "arifle_Mk20C_F"
-    #define IND_CARBINE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
+    #define IND_CARBINE "rhs_weap_akms"
+    #define IND_CARBINE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
 
-	//Diver
-	#define SDAR "arifle_SDAR_F"
-	#define SDAR_MAG "20Rnd_556x45_UW_mag:6"
+    //Diver
+    #define SDAR "arifle_SDAR_F"
+    #define SDAR_MAG "20Rnd_556x45_UW_mag:6"
 
 	// AR
-    #define IND_AR "LMG_Mk200_F"
-    #define IND_AR_MAG "200Rnd_65x39_cased_Box:9"
-    #define IND_AR_MAG2 "200Rnd_65x39_cased_Box_Tracer:5"
+    #define IND_AR "rhs_weap_pkm"
+    #define IND_AR_MAG "rhs_100Rnd_762x54mmR:9"
+    #define IND_AR_MAG2 "rhs_100Rnd_762x54mmR_green:5"
 
 	// AT
-    #define IND_AT "launch_NLAW_F"
-    #define IND_AT_MAG "NLAW_F:3"
+    #define IND_AT "ibr_rpg7v"
+    #define IND_AT_MAG "ibr_pg7v:3"
 
 	// MMG
-    #define IND_MMG "MMG_01_tan_F"
-    #define IND_MMG_MAG "150Rnd_93x64_Mag:5"
+    #define IND_MMG "rhs_weap_pkm"
+    #define IND_MMG_MAG "rhs_100Rnd_762x54mmR:5"
 
 	// MAT
-    #define IND_MAT "launch_RPG32_F"
-    #define IND_MAT_MAG "RPG32_F:2","RPG32_HE_F:1"
+    #define IND_MAT "ibr_rpg7v"
+    #define IND_MAT_MAG "ibr_pg7v:1","ibr_og7:2"
 
 	// SAM
-    #define IND_SAM "launch_I_Titan_F"
-    #define IND_SAM_MAG "Titan_AA:2"
+    #define IND_SAM "rhs_weap_igla"
+    #define IND_SAM_MAG "rhs_mag_9k38_rocket:2"
 
     // Sniper Rifle
-    #define IND_SNIPER "srifle_EBR_F"
-    #define IND_SNIPER_MAG "20Rnd_762x51_Mag:8"
+    #define IND_SNIPER "rhs_weap_svdp_pso1"
+    #define IND_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
 
 	// Spotter Rifle
-    #define IND_SPOTTER "srifle_DMR_06_olive_F"
-    #define IND_SPOTTER_MAG "20Rnd_762x51_Mag:8"
+    #define IND_SPOTTER "hlc_rifle_aek971"
+    #define IND_SPOTTER_MAG "hlc_30Rnd_545x39_B_AK:8"
 
 	// SMG
-    #define IND_SMG "hgun_PDW2000_F"
-    #define IND_SMG_MAG "30Rnd_9x21_Mag:6"
+    #define IND_SMG "rhs_weap_ak74m"
+    #define IND_SMG_MAG "rhs_30Rnd_545x39_AK:6"
 
 	// Pistol
-    #define IND_PISTOL "hgun_ACPC2_F"
-    #define IND_PISTOL_MAG "9Rnd_45ACP_Mag:4"
+    #define IND_PISTOL "rhsusf_weap_m1911a1"
+    #define IND_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:4"
 
 	// Grenades, Smoke and Frag
-    #define IND_GRENADE "HandGrenade:2"
-    #define IND_SMOKE_WHITE "SmokeShell:2"
-    #define IND_SMOKE_GREEN "SmokeShellGreen"
-    #define IND_SMOKE_RED "SmokeShellRed"
+    #define IND_GRENADE "rhs_mag_m67:2"
+    #define IND_SMOKE_WHITE "rhs_mag_an_m8hc:2"
+    #define IND_SMOKE_GREEN "rhs_mag_m18_green"
+    #define IND_SMOKE_RED "rhs_mag_m18_red"
 
 
 // ====================================================================================
@@ -93,10 +93,10 @@ class ind_f {
 // Leadership INF and Groupies
 
     class I_Soldier_F {// rifleman
-        uniform[] = {"U_I_CombatUniform"};  /// randomized
-        vest[] = {"V_PlateCarrierIA1_dgtl","V_Chestrig_oli","V_PlateCarrierIA1_dgtl"}; /// randomized
-        headgear[] = {"H_HelmetIA"}; /// randomized
-        backpack[] = {"B_AssaultPack_dgtl"}; /// randomized
+        uniform[] = {"LOP_U_AM_Fatigue_01","LOP_U_AM_Fatigue_02","LOP_U_AM_Fatigue_03","LOP_U_AM_Fatigue_04"};  /// randomized
+        vest[] = {"LOP_6sh46"}; /// randomized
+        headgear[] = {"H_ShemagOpen_khk","H_Shemag_olive","LOP_H_Shemag_BLK","LOP_H_Turban","LOP_H_Turban_mask"}; /// randomized
+        backpack[] = {"B_FieldPack_blk","B_FieldPack_khk","B_FieldPack_oli","ibr_backpack"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item"};
         weapons[] = {IND_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
@@ -104,7 +104,7 @@ class ind_f {
         magazines[] = {IND_RIFLE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         items[] = {"ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
-        attachments[] = {"optic_ACO_grn"};
+        attachments[] = {""};
     };
 
     class I_officer_F: I_Soldier_F {// CO and DC
@@ -112,7 +112,7 @@ class ind_f {
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_PISTOL_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         handguns[] = {IND_PISTOL}; /// randomized
         linkedItems[] += {"ItemGPS","Binocular"};
-        attachments[] = {"optic_ACO_grn"};
+        attachments[] = {""};
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
@@ -128,19 +128,13 @@ class ind_f {
         linkedItems[] += {"I_uavterminal"};
     };
 
-	class I_medic_F: I_Soldier_F {// Medic
-        weapons[] = {IND_CARBINE};
-        magazines[] = {IND_CARBINE_MAG,IND_SMOKE_WHITE,IND_SMOKE_WHITE,IND_SMOKE_WHITE};
-        backpack[] = {"B_AssaultPack_rgr"};
-        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
-    };
-
 // ====================================================================================
 // Grunt Infantry
 
+
     class I_Soldier_TL_F: I_Soldier_F {// FTL
         weapons[] = {IND_GLRIFLE};
-        headgear[] = {"H_HelmetIA"}; /// randomized
+        //headgear[] = {"H_HelmetIA"}; /// randomized
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GRENADE,IND_SMOKE_WHITE};
         linkedItems[] += {"ItemGPS","Binocular"};
         backpackItems[] += {"ACE_key_indp"};
@@ -156,7 +150,7 @@ class ind_f {
 
     class I_Soldier_AAR_F: I_Soldier_F {// AAR
         backpackItems[] += {IND_AR_MAG2};
-        attachments[] = {"optic_MRCO"};
+        attachments[] = {""};
         linkeditems[] += {"Binocular"};
     };
 
@@ -172,18 +166,25 @@ class ind_f {
         attachments[] = {""};
     };
 
+    class I_medic_F: I_Soldier_F {// Medic
+        weapons[] = {IND_CARBINE};
+        magazines[] = {IND_CARBINE_MAG,IND_SMOKE_WHITE,IND_SMOKE_WHITE,IND_SMOKE_WHITE};
+        backpack[] = {"B_Carryall_oli","B_Carryall_khk"};
+        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
+    };
+
 // ====================================================================================
 // Support Infantry
 
     class I_support_MG_F: I_Soldier_F {// MMG
         weapons[] = {IND_MMG};
-        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
+        backpack[] = {"B_Carryall_oli","B_Carryall_khk"}; /// randomized
         magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         handguns[] = {IND_PISTOL}; /// randomized
     };
 
-    class I_support_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
-        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
+    class I_Support_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
+        backpack[] = {"B_Carryall_oli","B_Carryall_khk"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
@@ -191,14 +192,14 @@ class ind_f {
 
     class I_soldier_AT_F: I_Soldier_F {// MAT Gunner
         weapons[] = {IND_CARBINE};
-        backpack[] = {"B_AssaultPack_dgtl"};
+        backpack[] = {"rhs_rpg_empty"};
         magazines[] = {IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         launchers[] = {IND_MAT}; /// randomized
         backpackItems[] += {IND_MAT_MAG};
     };
 
     class I_Soldier_AAT_F: I_Soldier_F {// MAT Spotter/Ammo Bearer
-        backpack[] = {"B_AssaultPack_dgtl"};
+        backpack[] = {"rhs_rpg_empty"};
         backpackItems[] += {IND_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
@@ -206,17 +207,17 @@ class ind_f {
 
     class I_soldier_AA_F: I_Soldier_F {// SAM Gunner
         weapons[] = {IND_CARBINE};
-        backpack[] = {"B_AssaultPack_dgtl"};
+        backpack[] = {"B_Carryall_oli","B_Carryall_khk"};
         magazines[] = {IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         launchers[] = {IND_SAM}; /// randomized
         backpackItems[] += {IND_SAM_MAG};
     };
 
     class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
-        backpackItems[] = {IND_SAM_MAG};
+        backpack[] = {"B_Carryall_oli","B_Carryall_khk"};
+		backpackItems[] = {IND_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
-        backpack[] = {"B_AssaultPack_dgtl"};
     };
 
     class I_support_Mort_F: I_Soldier_F {// Mortar Gunner
@@ -233,37 +234,37 @@ class ind_f {
     };
 
     class I_spotter_F {// Spotter
-        uniform[] = {"U_I_GhillieSuit"};  /// randomized
-        vest[] = {"V_Chestrig_oli"}; /// randomized
-        headgear[] = {"H_Booniehat_khk"}; /// randomized
-        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
+        //uniform[] = {"U_I_GhillieSuit"};  /// randomized
+        //vest[] = {"V_Chestrig_oli"}; /// randomized
+        //headgear[] = {"H_Booniehat_khk"}; /// randomized
+        //backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         weapons[] = {IND_SPOTTER}; /// randomized
         magazines[] = {IND_SPOTTER_MAG,IND_SMOKE_WHITE};
         items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
-        attachments[] = {"optic_KHS_blk"};
+        attachments[] = {"HLC_Optic_1p29"};
     };
 
     class I_sniper_F {// Sniper
-        uniform[] = {"U_I_GhillieSuit"};  /// randomized
-        vest[] = {"V_Chestrig_oli"}; /// randomized
-        headgear[] = {"H_Booniehat_khk"}; /// randomized
-        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
+        //uniform[] = {"U_I_GhillieSuit"};  /// randomized
+        //vest[] = {"V_Chestrig_oli"}; /// randomized
+        //headgear[] = {"H_Booniehat_khk"}; /// randomized
+        //backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         weapons[] = {IND_SNIPER}; /// randomized
         magazines[] = {IND_SNIPER_MAG,IND_SMOKE_WHITE};
         items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
-        attachments[] = {"optic_KHS_blk"};
+        attachments[] = {"rhs_acc_pso1m2"};
     };
 
 // ====================================================================================
 // Vehicle Infantry
 
     class I_Helipilot_F {// Pilot
-        uniform[] = {"U_I_pilotCoveralls"};  /// randomized
-        vest[] = {"V_TacVest_blk"}; /// randomized
-        headgear[] = {"H_PilotHelmetFighter_I"}; /// randomized
-        backpack[] = {"B_AssaultPack_rgr"};
+        //uniform[] = {"U_I_pilotCoveralls"};  /// randomized
+        //vest[] = {"V_TacVest_blk"}; /// randomized
+        //headgear[] = {"H_PilotHelmetFighter_I"}; /// randomized
+        //backpack[] = {"B_AssaultPack_rgr"};
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,IND_SMOKE_WHITE};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148", "ACRE_PRC343"};
@@ -281,9 +282,9 @@ class ind_f {
     };
 
     class I_crew_F {// Crew
-        uniform[] = {"U_I_CombatUniform"};  /// randomized
-        vest[] = {"V_BandollierB_oli"}; // randomized
-        headgear[] = {"H_HelmetCrew_I"}; /// randomized
+        //uniform[] = {"U_I_CombatUniform"};  /// randomized
+        //vest[] = {"V_BandollierB_oli"}; // randomized
+        //headgear[] = {"H_HelmetCrew_I"}; /// randomized
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,IND_SMOKE_WHITE};
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
@@ -299,14 +300,14 @@ class ind_f {
     };
 
     class I_soldier_exp_F: I_soldier_repair_F {// Explosive Specialist
-        uniform[] = {"U_I_CombatUniform_shortsleeve"};  /// randomized
+        //uniform[] = {"U_I_CombatUniform_shortsleeve"};  /// randomized
         backpack[] = {"B_Carryall_oli"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {IND_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
     };
 
     class I_engineer_F: I_soldier_repair_F {// Explosive Specialist
-        uniform[] = {"U_I_CombatUniform"};  /// randomized
+        //uniform[] = {"U_I_CombatUniform"};  /// randomized
         backpack[] = {"B_Carryall_oli"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {IND_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
@@ -317,26 +318,26 @@ class ind_f {
 
     class I_diver_TL_F: I_Soldier_TL_F {// Diver TL
         weapons[] = {SDAR};
-		magazines[] = {SDAR_MAG,IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
-		uniform[] = {"U_I_Wetsuit"};  /// randomized
+        magazines[] = {SDAR_MAG,IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
+        uniform[] = {"U_I_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherIA"}; /// randomized
         backpack[] = {"B_Carryall_oli"};
         headgear[] = {};
 
-        backpackItems[] += {/*"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA",*/IND_CARBINE};
+        backpackItems[] += {/*"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"*/IND_CARBINE};
         linkedItems[] += {"G_I_Diving"};
 
     };
 
     class I_diver_F: I_Soldier_F {// Diver
         weapons[] = {SDAR};
-		magazines[] = {SDAR_MAG,IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
-		uniform[] = {"U_I_Wetsuit"};  /// randomized
+        magazines[] = {SDAR_MAG,IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
+        uniform[] = {"U_I_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherIA"}; /// randomized
         backpack[] = {"B_Carryall_oli"};
         headgear[] = {};
 
-        backpackItems[] += {/*"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA",*/IND_CARBINE};
+        backpackItems[] += {/*"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"*/IND_CARBINE};
         linkedItems[] += {"G_I_Diving"};
 
     };

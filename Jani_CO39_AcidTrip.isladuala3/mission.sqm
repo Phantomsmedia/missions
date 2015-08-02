@@ -1,0 +1,881 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_INDEP",
+		"A3_Characters_F_EPC",
+		"dac_source",
+		"A3_Air_F_Heli_Heli_Transport_03",
+		"A3_Air_F_Heli_Heli_Transport_04",
+		"A3_Air_F_Beta_Heli_Transport_02",
+		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_Air_F_Beta_Heli_Attack_02",
+		"A3_Soft_F_TruckHeavy",
+		"A3_Soft_F_MRAP_03",
+		"A3_Soft_F_MRAP_01",
+		"A3_Soft_F_HEMTT",
+		"A3_Soft_F_MRAP_02",
+		"A3_Soft_F_EPC_Truck_03",
+		"A3_Weapons_F_Beta_Ammoboxes",
+		"a3_weapons_f_ammoboxes",
+		"A3_Air_F_EPB_Heli_Light_03",
+		"A3_Air_F_EPC_Plane_CAS_01",
+		"A3_Air_F_Gamma_Plane_Fighter_03",
+		"A3_Air_F_EPC_Plane_CAS_02",
+		"A3_Armor_F_AMV",
+		"A3_armor_f_beta_APC_Tracked_02",
+		"A3_Armor_F_Slammer",
+		"A3_Armor_F_T100K",
+		"A3_Armor_F_EPB_APC_tracked_03",
+		"A3_Armor_F_EPB_MBT_03",
+		"map_vr",
+		"A3_Armor_F_Panther",
+		"A3_Armor_F_APC_Wheeled_03",
+		"A3_Armor_F_Marid",
+		"lop_faction_afr_civ",
+		"lop_faction_afr",
+		"a3_map_isladuala3"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_INDEP",
+		"a3_characters_f",
+		"A3_Characters_F_EPC",
+		"dac_source",
+		"lop_faction_afr_civ",
+		"lop_faction_afr",
+		"A3_Weapons_F_Beta_Ammoboxes",
+		"a3_weapons_f_ammoboxes",
+		"a3_map_isladuala3"
+	};
+	randomSeed=11823142;
+	class Intel
+	{
+		briefingName="Jani CO39 Acid Trip";
+		overviewText="African terrorists attempt to pollute local waters by capturing and then dumping toxic cargo.";
+		resistanceWest=0;
+		startWeather=0.31999999;
+		startWind=0.44999999;
+		startWindDir=195;
+		startWaves=0.62;
+		startGust=0.44;
+		forecastWeather=0.32999998;
+		forecastWind=0.50999999;
+		forecastWaves=0.62;
+		forecastGust=0.5;
+		forecastWindDir=240;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=1;
+		day=1;
+		hour=12;
+		minute=0;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Groups
+	{
+		items=17;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3873.644,4.9938889,9885.5156};
+					id=0;
+					side="GUER";
+					vehicle="I_officer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitIND_PLT";
+					description="INDFOR Platoon Leader";
+				};
+				class Item1
+				{
+					position[]={3876.9409,4.9938889,9882.5547};
+					id=1;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_PLT_M";
+					description="INDFOR Platoon HQ Medic";
+				};
+				class Item2
+				{
+					position[]={3879.8335,4.9938889,9882.3574};
+					id=2;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_PSG";
+					description="INDFOR Platoon Sergeant";
+				};
+				class Item3
+				{
+					position[]={3883.1948,4.9938889,9882.3164};
+					id=3;
+					side="GUER";
+					vehicle="I_Soldier_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_PLT_FO";
+					description="INDFOR Forward Observer";
+				};
+			};
+		};
+		class Item1
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3900.7073,4.9938889,9901.0127};
+					id=4;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_ASL_SL";
+					description="INDFOR Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={3903.2913,4.9938889,9899.8486};
+					id=5;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_ASL_M";
+					description="INDFOR Alpha Medic";
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3901.2073,4.9938889,9887.7061};
+					id=6;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_A1_FTL";
+					description="INDFOR Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={3903.8401,4.9938889,9885.7803};
+					id=7;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A1_AR";
+					description="INDFOR Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={3906.5042,4.9938889,9885.6084};
+					id=8;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A1_AAR";
+					description="INDFOR Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3909.3323,4.9938889,9885.5771};
+					id=9;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A1_AT";
+					description="INDFOR Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item3
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3901.3049,4.9938889,9870.3701};
+					id=10;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_A2_FTL";
+					description="INDFOR Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={3903.967,4.9938889,9869.2021};
+					id=11;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A2_AR";
+					description="INDFOR Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={3906.637,4.9938889,9869.1475};
+					id=12;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A2_AAR";
+					description="INDFOR Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3909.3909,4.9938889,9869.1396};
+					id=13;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A2_AT";
+					description="INDFOR Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item4
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3901.4241,4.9938889,9854.2568};
+					id=14;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_A3_FTL";
+					description="INDFOR Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={3904.0217,4.9938889,9852.4639};
+					id=15;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A3_AR";
+					description="INDFOR Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={3906.6584,4.9938889,9852.417};
+					id=16;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A3_AAR";
+					description="INDFOR Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3909.3108,4.9938889,9852.4053};
+					id=17;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_A3_AT";
+					description="INDFOR Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item5
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3925.0901,4.9938889,9901.6143};
+					id=18;
+					side="GUER";
+					vehicle="I_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitIND_BSL_SL";
+					description="INDFOR Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={3927.5198,4.9938889,9900.3018};
+					id=19;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_BSL_M";
+					description="INDFOR Bravo Medic";
+				};
+			};
+		};
+		class Item6
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3924.5413,4.9938889,9887.9482};
+					id=20;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_B1_FTL";
+					description="INDFOR Bravo 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={3927.4768,4.9938889,9886.4521};
+					id=21;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B1_AR";
+					description="INDFOR Bravo 1 Automatic Riflemen";
+				};
+				class Item2
+				{
+					position[]={3930.3674,4.9938889,9886.3428};
+					id=22;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B1_AAR";
+					description="INDFOR Bravo 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3933.2307,4.9938889,9886.2803};
+					id=23;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B1_AT";
+					description="INDFOR Bravo 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item7
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3924.5872,4.9938889,9870.1396};
+					id=24;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_B2_FTL";
+					description="INDFOR Bravo 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={3927.5784,4.9938889,9869.1904};
+					id=25;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B2_AR";
+					description="INDFOR Bravo 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={3930.4104,4.9938889,9869.1357};
+					id=26;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B2_AAR";
+					description="INDFOR Bravo 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3933.385,4.9938889,9869.124};
+					id=27;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B2_AT";
+					description="INDFOR Bravo 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item8
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3924.8694,4.9938889,9854.3545};
+					id=28;
+					side="GUER";
+					vehicle="I_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_B3_FTL";
+					description="INDFOR Bravo 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={3927.4963,4.9938889,9852.71};
+					id=29;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B3_AR";
+					description="INDFOR Bravo 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={3930.4338,4.9938889,9852.6396};
+					id=30;
+					side="GUER";
+					vehicle="I_Soldier_AAR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B3_AAR";
+					description="INDFOR Bravo 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3933.2581,4.9938889,9852.6201};
+					id=31;
+					side="GUER";
+					vehicle="I_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_B3_AT";
+					description="INDFOR Bravo 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item9
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3958.0117,4.9938889,9850.2969};
+					id=32;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					description="Mission Observer";
+				};
+			};
+		};
+		class Item10
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3965.2031,4.9938889,9850.0547};
+					id=33;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					description="Mission Observer";
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3987.1201,5.0746508,9848.166};
+					id=34;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC";
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4114.1445,4.9938889,9848.082};
+					id=35;
+					side="LOGIC";
+					vehicle="DAC_Source_Extern";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4021.248,7.5227571,9848.2988};
+					id=36;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC2";
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4054.4785,4.9938889,9847.6816};
+					id=37;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC3";
+				};
+			};
+		};
+		class Item15
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3946.02,4.9938889,9883.8105};
+					azimut=1.77231;
+					id=38;
+					side="GUER";
+					vehicle="I_Soldier_A_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_MMG1_AG";
+					description="INDFOR Medium MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={3949.063,4.9938889,9882.2656};
+					id=39;
+					side="GUER";
+					vehicle="I_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitIND_MMG1_G";
+					description="INDFOR Medium MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item16
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3947.1501,4.9938889,9890.9814};
+					azimut=1.77231;
+					id=40;
+					side="GUER";
+					vehicle="I_support_AMG_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitIND_HMG1_AG";
+					description="INDFOR Heavy MG Team 1 Spotter";
+				};
+				class Item1
+				{
+					position[]={3950.1931,4.9938889,9889.4346};
+					id=41;
+					side="GUER";
+					vehicle="I_support_MG_F";
+					player="PLAYER COMMANDER";
+					skill=0.60000002;
+					text="UnitIND_HMG1_G";
+					description="INDFOR Heavy MG Team 1 Gunner";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=6;
+		class Item0
+		{
+			position[]={3901.6917,4.9938889,9915.4365};
+			id=42;
+			side="EMPTY";
+			vehicle="LOP_AFR_Civ_Ural";
+			skill=0.60000002;
+			text="VehIND_TR1";
+		};
+		class Item1
+		{
+			position[]={3928.0276,4.9938889,9915.6182};
+			id=43;
+			side="EMPTY";
+			vehicle="LOP_AFR_Civ_Ural_open";
+			skill=0.60000002;
+			text="VehIND_TR2";
+		};
+		class Item2
+		{
+			position[]={3868.4614,4.9938889,9884.2031};
+			id=44;
+			side="EMPTY";
+			vehicle="LOP_AFR_Landrover";
+			skill=0.60000002;
+			text="VehIND_CAR1";
+		};
+		class Item3
+		{
+			position[]={3901.9983,4.9938889,9903.0811};
+			id=45;
+			side="EMPTY";
+			vehicle="I_supplyCrate_F";
+			skill=0.60000002;
+			text="CrateAAF_A";
+		};
+		class Item4
+		{
+			position[]={3926.0725,4.9938889,9903.8779};
+			id=46;
+			side="EMPTY";
+			vehicle="I_supplyCrate_F";
+			skill=0.60000002;
+			text="CrateAAF_B";
+		};
+		class Item5
+		{
+			position[]={3954.4216,4.9938889,9887.8555};
+			id=47;
+			side="EMPTY";
+			vehicle="LOP_AFR_Landrover_M2";
+			leader=1;
+			skill=0.60000002;
+			text="VehIND_IFV1";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={5440.6865,-3.358983,9204.0146};
+			name="Dumping Point";
+			text="Dumping Point";
+			type="hd_end";
+			colorName="ColorEAST";
+		};
+		class Item1
+		{
+			position[]={4180.376,4.9938889,8927.8857};
+			name="Vehicle";
+			text="Vehicle";
+			type="hd_objective";
+			colorName="ColorEAST";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"map_vr",
+		"a3_map_isladuala3"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_isladuala3"
+	};
+	randomSeed=8428644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"map_vr",
+		"a3_map_isladuala3"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_isladuala3"
+	};
+	randomSeed=4674277;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"map_vr",
+		"a3_map_isladuala3"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_isladuala3"
+	};
+	randomSeed=6586695;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
