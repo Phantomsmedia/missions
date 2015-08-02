@@ -835,21 +835,21 @@ _Unit_Pool_A = [
 case 23:
 {
 _Unit_Pool_S = [
+	"LOP_SLA_Infantry_Crewman", 
+	"LOP_SLA_Infantry_Pilot", 
+	"LOP_SLA_Infantry_TL",	
 	"LOP_SLA_Infantry_AA",
 	"LOP_SLA_Infantry_AT",
 	"LOP_SLA_Infantry_AT_Asst",
 	"LOP_SLA_Infantry_Corpsman",
-	"LOP_SLA_Infantry_Crewman", 
 	"LOP_SLA_Infantry_Engineer", 
 	"LOP_SLA_Infantry_GL", 
 	"LOP_SLA_Infantry_MG", 
 	"LOP_SLA_Infantry_MG_Asst", 
 	"LOP_SLA_Infantry_Marksman", 
 	"LOP_SLA_Infantry_Officer", 
-	"LOP_SLA_Infantry_Pilot", 
 	"LOP_SLA_Infantry_Rifleman", 
-	"LOP_SLA_Infantry_SL", 
-	"LOP_SLA_Infantry_TL"
+	"LOP_SLA_Infantry_SL"
 ];
 _Unit_Pool_V = [
 	"LOP_SLA_BM21", 

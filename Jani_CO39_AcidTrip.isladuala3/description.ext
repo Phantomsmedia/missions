@@ -30,9 +30,9 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
+onLoadName = "Acid Trip";
 onLoadMission = "Made with Geared WL";
-author = "*** Insert mission author name here. ***";
+author = "Jani";
 loadScreen = "loadLogo.jpg";
 
 // ============================================================================================

@@ -7,7 +7,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Jani did this okay. He did it okay.
 <br/><br/>
 Made with Wavelength.
 "]];
@@ -19,7 +19,7 @@ Made with Wavelength.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Mission end when death enters the waters.
 "]];
 
 // ====================================================================================
@@ -62,25 +62,6 @@ From 30 to 39 for Infantry Support (MMG etc)
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
-_exe = player createDiaryRecord ["diary", ["Execution","
-<br/>
-<font size='18'>COMMANDER'S INTENT</font>
-<br/>
-*** Insert very short summary of plan here. ***
-<br/><br/>
-<font size='18'>MOVEMENT PLAN</font>
-<br/>
-*** Insert movement instructions here. ***
-<br/><br/>
-<font size='18'>FIRE SUPPORT PLAN</font>
-<br/>
-*** Insert fire support instructions here. ***
-<br/><br/>
-<font size='18'>SPECIAL TASKS</font>
-<br/>
-*** Insert instructions for specific units here. ***
-"]];
-
 // ====================================================================================
 
 // NOTES: MISSION
@@ -88,7 +69,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Gather waste truck from military base that has already gone on alert. Then dump waste into the local waters at the marked location. The location ensures perfect spread of toxic materials to the surrounding waters and the island's water supply.
 "]];
 
 // ====================================================================================
@@ -98,15 +79,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+The Arm of Freedom, an African terrorist, I mean, freedom movement, aims to destroy all life on Duala. To do so, they will be dumping a radioactive waste truck into the waters. The heavily radioactive waste will ruin all the local water supplies and fish in the area.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+Duala's Army. Infantry mainly, perhaps a technical or two.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-*** Insert information about friendly forces here.***
+The Arm of Freedom.
 "]];
 
 // ====================================================================================
